@@ -4,10 +4,6 @@ Static GitHub Pages landing page for Roy and Mor's wedding gift details.
 
 Published URL:
 
-`https://royandmor.com`
-
-Fallback GitHub Pages URL:
-
 `https://morbad13.github.io/roy-mor-wedding/`
 
 Assets:
