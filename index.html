@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="דף מתנות לחתונה של רועי ומור - פרטי העברה בנקאית"
+    />
+    <title>רועי ומור מתחתנים</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fbf7f1;
+        --card: #fffaf4;
+        --text: #2d2520;
+        --muted: #75685f;
+        --accent: #9f6a4d;
+        --accent-dark: #744934;
+        --border: #eadccd;
+        --success: #2f7d57;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(255, 255, 255, 0.9), transparent 32rem),
+          linear-gradient(135deg, #fbf7f1 0%, #f2e5d7 100%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(100%, 42rem);
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+
+      .card {
+        background: rgba(255, 250, 244, 0.92);
+        border: 1px solid var(--border);
+        border-radius: 2rem;
+        box-shadow: 0 1.5rem 4rem rgba(69, 45, 30, 0.14);
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: 3rem 1.5rem 2rem;
+        text-align: center;
+      }
+
+      .photo-frame {
+        width: min(100%, 23rem);
+        margin: 0 auto 2rem;
+        padding: 0.45rem;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--border);
+        border-radius: 1.75rem;
+        box-shadow: 0 1rem 2.5rem rgba(69, 45, 30, 0.12);
+      }
+
+      .photo-frame img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1.35rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.75rem;
+        color: var(--accent);
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.7rem, 12vw, 5rem);
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .subtitle {
+        margin: 1rem auto 0;
+        max-width: 30rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .section {
+        padding: 1.25rem 1.5rem;
+      }
+
+      .section + .section {
+        border-top: 1px solid var(--border);
+      }
+
+      h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.25rem;
+      }
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      .bank-details {
+        display: grid;
+        gap: 0.75rem;
+        margin: 1rem 0;
+      }
+
+      .detail {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.85rem 1rem;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+      }
+
+      .label {
+        color: var(--muted);
+      }
+
+      .value {
+        font-weight: 700;
+        text-align: left;
+        direction: ltr;
+      }
+
+      .actions {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      button,
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 3.25rem;
+        padding: 0.85rem 1rem;
+        border: 0;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        font: inherit;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 160ms ease,
+          background 160ms ease;
+      }
+
+      button:hover,
+      a.button:hover {
+        background: var(--accent-dark);
+        transform: translateY(-1px);
+      }
+
+      .secondary {
+        background: #fff;
+        color: var(--accent-dark);
+        border: 1px solid var(--border);
+      }
+
+      .secondary:hover {
+        background: #fff7ed;
+      }
+
+      .toast {
+        min-height: 1.5rem;
+        margin-top: 0.75rem;
+        color: var(--success);
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .footer {
+        padding: 1.25rem 1.5rem 1.75rem;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      @media (min-width: 44rem) {
+        main {
+          padding-top: 4rem;
+        }
+
+        .hero {
+          padding: 4rem 3rem 2.5rem;
+        }
+
+        .section {
+          padding: 1.5rem 3rem;
+        }
+
+        .footer {
+          padding-inline: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <header class="hero">
+          <div class="photo-frame">
+            <img src="roy-mor.jpeg" alt="רועי ומור" />
+          </div>
+          <p class="eyebrow">אנחנו מתחתנים</p>
+          <h1>רועי ומור</h1>
+          <p class="subtitle">
+            שמחים ומתרגשים לחגוג איתכם את היום שלנו.
+          </p>
+        </header>
+
+        <section class="section" aria-labelledby="gift-heading">
+          <h2 id="gift-heading">מתנה לחתונה</h2>
+          <p>
+            אם תרצו לשמח אותנו במתנה, הדרך הנוחה והפשוטה ביותר היא העברה
+            בנקאית ישירה. הכנו כאן את כל הפרטים במקום אחד, כדי שיהיה קל להעתיק
+            ולהעביר דרך אפליקציית הבנק.
+          </p>
+          <p>תודה שאתם חלק מהרגע הזה איתנו.</p>
+        </section>
+
+        <section class="section" aria-labelledby="bank-heading">
+          <h2 id="bank-heading">פרטי העברה בנקאית</h2>
+          <div class="bank-details">
+            <div class="detail">
+              <span class="label">שם הבנק</span>
+              <span class="value" id="bankName">BANK_NAME</span>
+            </div>
+            <div class="detail">
+              <span class="label">מספר סניף</span>
+              <span class="value" id="branchNumber">BRANCH_NUMBER</span>
+            </div>
+            <div class="detail">
+              <span class="label">מספר חשבון</span>
+              <span class="value" id="accountNumber">ACCOUNT_NUMBER</span>
+            </div>
+            <div class="detail">
+              <span class="label">שם בעל/י החשבון</span>
+              <span class="value" id="accountHolder">ACCOUNT_HOLDER</span>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="button" data-copy="all">העתק את כל פרטי החשבון</button>
+            <button class="secondary" type="button" data-copy="account">
+              העתק מספר חשבון
+            </button>
+            <button class="secondary" type="button" data-copy="branch">
+              העתק מספר סניף
+            </button>
+          </div>
+          <div class="toast" role="status" aria-live="polite" id="toast"></div>
+        </section>
+
+        <section class="section" aria-labelledby="help-heading">
+          <h2 id="help-heading">צריכים עזרה?</h2>
+          <p>
+            אם משהו לא ברור או שצריך לוודא פרטים, אפשר לשלוח לנו הודעה ונעזור
+            בשמחה.
+          </p>
+          <a class="button secondary" id="whatsappLink" href="https://wa.me/WHATSAPP_PHONE">
+            שלחו הודעה ב-WhatsApp
+          </a>
+        </section>
+
+        <footer class="footer">
+          באהבה, רועי ומור
+          <br />
+          WEDDING_DATE · VENUE_NAME
+        </footer>
+      </article>
+    </main>
+
+    <script>
+      const details = {
+        bankName: document.getElementById("bankName").textContent.trim(),
+        branchNumber: document.getElementById("branchNumber").textContent.trim(),
+        accountNumber: document.getElementById("accountNumber").textContent.trim(),
+        accountHolder: document.getElementById("accountHolder").textContent.trim(),
+      };
+
+      const copyText = {
+        all: [
+          `שם הבנק: ${details.bankName}`,
+          `מספר סניף: ${details.branchNumber}`,
+          `מספר חשבון: ${details.accountNumber}`,
+          `שם בעל/י החשבון: ${details.accountHolder}`,
+        ].join("\n"),
+        account: details.accountNumber,
+        branch: details.branchNumber,
+      };
+
+      const toast = document.getElementById("toast");
+      let toastTimeout;
+
+      async function copyToClipboard(text) {
+        await navigator.clipboard.writeText(text);
+        toast.textContent = "הפרטים הועתקו";
+        window.clearTimeout(toastTimeout);
+        toastTimeout = window.setTimeout(() => {
+          toast.textContent = "";
+        }, 2500);
+      }
+
+      document.querySelectorAll("[data-copy]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          try {
+            await copyToClipboard(copyText[button.dataset.copy]);
+          } catch {
+            toast.textContent = "לא הצלחנו להעתיק אוטומטית. אפשר לסמן ולהעתיק ידנית.";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
